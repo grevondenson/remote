@@ -20,7 +20,7 @@ export const socials = [
   {
     id: 'whatsapp-group',
     label: 'WhatsApp Group',
-    url: 'https://chat.whatsapp.com/BVFXH8RjNvfFA5MCiYbpPM',       // ← EDIT
+    url: 'https://chat.whatsapp.com/HCAVV5auvJQ4oKSXKW7HSQ',       // ← EDIT
   },
   {
     id: 'whatsapp-dm',
