@@ -38,16 +38,13 @@ export default function Header() {
           <button
             type="button"
             onClick={() => scrollTo('home')}
-            className="flex items-center gap-2 group focus:outline-none"
+            className="flex items-center focus:outline-none"
           >
             <img
-              src="/apple-touch-icon.png"
-              alt="Milo Remote Deals Logo"
-              className="w-8 h-8 rounded-lg"
+              src="/milo-remotejobs-logo.png"
+              alt="Milo Remote Jobs logo"
+              className="h-12 w-auto rounded-lg"
             />
-            <span className="font-syne font-bold  text-white text-base leading-none group-hover:text-brand-orange-lt transition-colors">
-              MILO- <span className="text-brand-orange-lt">REMOTE</span>DEALS
-            </span>
           </button>
 
           {/* Desktop nav */}

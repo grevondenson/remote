@@ -1,10 +1,12 @@
-import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa6'
+import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp, FaXTwitter } from 'react-icons/fa6'
 import { socials } from '../data/socials'
 
 export function SocialIcon({ id }) {
   const cls = 'w-4 h-4 flex-shrink-0'
   if (id === 'instagram')       return <FaInstagram className={cls} />
   if (id === 'tiktok')          return <FaTiktok className={cls} />
+  if (id === 'x')               return <FaXTwitter className={cls} />
+  if (id === 'facebook')        return <FaFacebookF className={cls} />
   if (id === 'whatsapp-channel' || id === 'whatsapp-group' || id === 'whatsapp-dm')
                                  return <FaWhatsapp className={cls} />
   return null
@@ -36,16 +38,13 @@ export default function Footer() {
             <button
               type="button"
               onClick={() => scrollTo('home')}
-              className="flex items-center gap-2 mb-4 focus:outline-none group"
+              className="flex items-center mb-4 focus:outline-none group"
             >
               <img
-                src="/apple-touch-icon.png"
-                alt="Milo Remote Deals Logo"
-                className="w-6 h-6 rounded-md flex-shrink-0"
+                src="/milo-remotejobs-logo.png"
+                alt="Milo Remote Jobs logo"
+                className="h-12 w-auto rounded-md flex-shrink-0"
               />
-              <span className="font-syne font-bold text-white text-base group-hover:text-brand-orange-lt transition-colors">
-                Milo <span className="text-brand-orange-lt">Remote</span>Deals
-              </span>
             </button>
             <p className="font-outfit text-white/45 text-sm leading-relaxed">
               Your honest guide to legit remote work — AI training, chat moderation, surveys, and more.
